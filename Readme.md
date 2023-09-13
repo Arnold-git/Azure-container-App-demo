@@ -42,8 +42,6 @@ pip install -r app/requirements.txt
 uvicorn app.main:app --reload
 ```
 
-**Build Docker image**
-
 ## Demo
 
 ![Demo](app/asset/demo.gif)
