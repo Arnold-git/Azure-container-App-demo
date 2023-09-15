@@ -7,7 +7,7 @@ The purpose of this README.md file is to explain the steps required to setup thi
 ### Requirements 
 * Python
 * Docker
-* Azure acouny
+* Azure acount
 * Azure CLI
 
 ## Setting up with Python ### 
@@ -50,7 +50,16 @@ uvicorn app.main:app --reload
 docker build --tag fastapi-azure-demo . && docker run -d --name fastapi-azure-container -p 3200:3200 fastapi-azure-demo
 ```
 
-Open the `http://localhost:3200` URL in your browser to see the web app running locally.
+Open the ![](http://localhost:3200) URL in your browser to see the web app running locally.
+
+## Deploy to Azure Container App ### 
+In a bash or any other CLI client, run the following command
+
+**Deploy to Azure container Apps**
+```
+az containerapp up --resource-group fastapi-azure-demo-rg --name fastapi-azure-demo --ingress external --target-port 3200 --source .
+
+```
 
 ## Demo
 
