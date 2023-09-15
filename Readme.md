@@ -71,6 +71,12 @@ az containerapp logs show --name fastapi-azure-demo --resource-group fastapi-azu
 ```
 ![](app/asset/azure-cli-02.png)
 
+**clean up**
+```
+az group delete --name fastapi-azure-demo-rg
+
+```
+
 ## Demo
 
 ![Demo](app/asset/demo.gif)
