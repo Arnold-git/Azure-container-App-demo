@@ -53,13 +53,15 @@ docker build --tag fastapi-azure-demo . && docker run -d --name fastapi-azure-co
 Open the ![](http://localhost:3200) URL in your browser to see the web app running locally.
 
 ## Deploy to Azure Container App ### 
-In a bash or any other CLI client, run the following command
+In a bash or any other CLI client, run the following command in the project root folder
 
 **Deploy to Azure container Apps**
 ```
 az containerapp up --resource-group fastapi-azure-demo-rg --name fastapi-azure-demo --ingress external --target-port 3200 --source .
 
 ```
+You should see this in your terminal when the deployment is complete.
+![](app/asset/azure-cli-01.png)
 
 ## Demo
 
