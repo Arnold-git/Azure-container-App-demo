@@ -67,5 +67,3 @@ app.include_router(api_router, prefix=settings.API_V1_STR)
 app.include_router(root_router)
 customise_openapi(app)
 
-if __name__ == '__main__':
-    uvicorn.run('main:app', host='0.0.0.0', port=8000)
