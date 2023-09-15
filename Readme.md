@@ -69,6 +69,7 @@ You should see this in your terminal when the deployment is complete.
 az containerapp logs show --name fastapi-azure-demo --resource-group fastapi-azure-demo-rg --type console --follow
 
 ```
+![](app/asset/azure-cli-02.png)
 
 ## Demo
 
